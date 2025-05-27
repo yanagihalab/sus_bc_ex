@@ -20,6 +20,7 @@ cd EX_analyse_BC
 py -3.12 -m venv "xxx"
 ```
 
+
 - 仮想環境に切り替える
 ```bash
 xxx\scripts\activate

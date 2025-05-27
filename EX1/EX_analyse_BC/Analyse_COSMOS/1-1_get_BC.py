@@ -5,13 +5,13 @@ import time
 from tqdm import tqdm  # 追加
 
 # 定数定義
-BASE_URL_BLOCK = "https://babylon-rpc.publicnode.com/block"
-BASE_URL_VALIDATORS = "https://babylon-rpc.publicnode.com/validators"
+BASE_URL_BLOCK = "*___*/block"
+BASE_URL_VALIDATORS = "*___*/validators"
 PER_PAGE = 100
 TOTAL_PAGES = 1
 RETRY_LIMIT = 100
 SLEEP_TIME = 1
-BLOCK_COUNT = 500
+BLOCK_COUNT = *___*
 SAVE_DIR = "current"
 
 # 保存先ディレクトリの作成（存在しない場合）
@@ -27,7 +27,7 @@ def get_latest_height():
     return int(latest_block["result"]["block"]["header"]["height"])
 
 latest_height = get_latest_height()
-print(f"最新のブロック番号: {latest_height}")
+print(f"最新のブロック番号: {*___*}")
 
 # 最新のブロックから5000ブロック分さかのぼって取得
 for i in tqdm(range(BLOCK_COUNT), desc="Fetching blocks", unit="block"):
