@@ -22,7 +22,7 @@ py -3.12 -m venv "xxx"
 
 - 仮想環境に切り替える
 ```bash
-3.12\scripts\activate
+xxx\scripts\activate
 ```
 - プロンプトの左に(3.12)が付くのを確認
 
@@ -63,4 +63,3 @@ cd EX_analyse_BC_jupyter
 ```
 
 
-(提出先及び共有ファイル)[https://susadmin-my.sharepoint.com/personal/yanagihara_takaaki_rs_sus_ac_jp/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyanagihara%5Ftakaaki%5Frs%5Fsus%5Fac%5Fjp%2FDocuments%2FJO%5FEX&ga=1]

@@ -25,12 +25,22 @@ docker build -t simblock-joex .
 
 以下のコマンドでSimBlockを実行します。
 
+#### git bashで行う場合
 ```bash
 docker run --rm -i \
   -v $(pwd)/settings/SimulationConfiguration.java:/app/simblock/simulator/src/main/java/simblock/settings/SimulationConfiguration.java \
   -v $(pwd)/settings/NetworkConfiguration.java:/app/simblock/simulator/src/main/java/simblock/settings/NetworkConfiguration.java \
   -v $(pwd)/output:/app/simblock/simulator/src/dist/output \
-  simblock-joex 2>&1 | tee simulation_log.txt
+  simblock-minimal 2>&1 | tee simulation_log.txt
+```
+
+#### windows terminalで行う場合
+```powershell
+docker run --rm -i ^
+  -v "%cd%\settings\SimulationConfiguration.java":/app/simblock/simulator/src/main/java/simblock/settings/SimulationConfiguration.java ^
+  -v "%cd%\settings\NetworkConfiguration.java":/app/simblock/simulator/src/main/java/simblock/settings/NetworkConfiguration.java ^
+  -v "%cd%\output":/app/simblock/simulator/src/dist/output ^
+  simblock-minimal > simulation_log.txt 2>&1
 ```
 
 実行後、シミュレーション結果は`output`ディレクトリに保存されます。

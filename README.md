@@ -5,3 +5,8 @@
 
 ## EX_simblock
 simblockを用いてブロックチェーンのチェーン分岐を観測します. 
+
+## 本リポジトリをclone
+```sh
+git clone https://github.com/yanagihalab/JO_EX.git
+```
