@@ -1,4 +1,4 @@
-import json
+import *__*
 import os
 from collections import Counter
 import pandas as pd
@@ -61,7 +61,7 @@ def analyze_block_json(file_path):
     return result
 
 
-def analyze_all_blocks(directory):
+def analyze_all_blocks(*__*):
     results = []
     block_counter = 0
     for filename in sorted(os.listdir(directory)):
@@ -80,7 +80,7 @@ def analyze_all_blocks(directory):
     return results
 
 
-data_directory = "./current"
+data_directory = "*__*"
 
 if __name__ == "__main__":
     all_results = analyze_all_blocks(data_directory)
