@@ -39,7 +39,7 @@ if __name__ == "__main__":
     print(f"🚀 Mode: {'Multi-process' if USE_MULTIPROCESS else 'Single process'}")
     print(f"⏩ 使用コア数: {N_WORKERS} / 最大: {MAX_CORES}\n")
 
-    difficulties = range(1, 9)
+    difficulties = range(1, 10)
     times = []
     trials = []
 
